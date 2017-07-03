@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <!-- Apple devices fullscreen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Apple devices fullscreen -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/newsDetail.css">
+    <link rel="stylesheet" href="css/media640.css">
+    <!--<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>-->
+    <!--<script src="js/index.js"></script>-->
+    <script src="js/jquery.js"></script>
+    <title>新闻详情</title>
+</head>
+<body>
+<div id="top">
+    <div class="w-max ct clearfix">
+        <h1 class="fl"></h1>
+        <div class="ulW">
+            <ul class="clearfix">
+                <li class="top1">
+                    <span></span>
+                    <p>月嫂培训</p>
+                </li>
+                <li class="top2">
+                    <span></span>
+                    <p>育儿嫂培训</p>
+                </li>
+                <li class="top3">
+                    <span></span>
+                    <p>催乳师培训</p>
+                </li>
+                <li class="top4">
+                    <span></span>
+                    <p>调理师培训</p>
+                </li>
+                <li class="top5">
+                    <span></span>
+                    <p>王牌训练营</p>
+                </li>
+            </ul>
+        </div>
+        <div class="fr phone">
+            <span></span>
+            <p>24小时咨询热线<br><i>18100806570</i></p>
+        </div>
+    </div>
+</div>
+
+<div id="pContent">
+    <div class="w-max ct clearfix ovh">
+        <div class="left fl">
+            <div class="lT">
+                <h3>新闻中心</h3>
+                <span>NEWS CENTER</span>
+            </div>
+            <div class="lB">
+                <ul>
+                    <li class="active"><a href="#">企业新闻</a></li>
+                    <li><a href="#">企业公告</a></li>
+                    <li><a href="#">行业资讯</a></li>
+                </ul>
+                <span class="nav"></span>
+            </div>
+        </div>
+        <div class="right fl">
+            <div class="ban">
+                <img src="images/topBg.jpg" alt="科技">
+            </div>
+            <div class="rc p10">
+                <h3>产妇坐月子有哪些禁忌？</h3>
+                <span>更新时间：2017-03-10 浏览数：72次</span>
+                <div class="detail">
+                    <p>女人生完宝宝之后，就需要好好坐月子，产妇月子坐的好不好直接关系到产妇以后的身体恢复情况，坐月子期间产妇有很多禁忌，现在小编就来盘点产妇坐月子期间有哪些禁忌吧！</p>
+                    <img src="images/news.jpg" alt="">
+                </div>
+                <div class="newsNav">
+                    <a href="#">上一篇</a>
+                    <a href="#">下一篇</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="foot">
+    <p>Copyright © 2017 岭西科技有限公司 All Rights Reserved ICP备0000000000号 </p>
+</div>
+<div class="broadside">
+    <div class="ulW">
+        <ul class="">
+            <li class="kf">
+                <div class="qq"></div>
+                <p>在线客服</p>
+                <div class="left">
+                    <div class="lc">
+                        <div class="lct">客服QQ</div>
+                        <div class="lcc">
+                            <a href="#">客服1 </a>
+                            <a href="#">客服1 </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="goTop">
+                <div class="icon"></div>
+                <p>回到顶部</p>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script>
+    $(function () {
+        $("#pContent .left ").on("click",".nav",function () {
+            $(".left").addClass("off");
+        });
+        $("#pContent .left ").on("click",function (e) {
+            if($(e.target).parents(".lB").length===0&&!$(e.target).hasClass("lB")&&!$(e.target).hasClass("nav")){
+
+                $(".left").removeClass("off");
+            }
+        })
+    })
+</script>
+</html>

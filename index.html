@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=P6BYdqivEstTTbxAP8qvGc49ZnEkrPbG"></script>
+    <link rel="stylesheet" href="css/media640.css">
     <title>Title</title>
 </head>
 <body>
@@ -42,7 +45,16 @@
     </div>
 </div>
 <div id="ban">
-    <a href="#">点击报名</a>
+    <a href="#" id="submit">点击报名</a>
+</div>
+<div class="form">
+    <div class="formW ">
+        <form action="" method="post">
+            <label for="name1" class="name1"><input type="text" placeholder="姓名" name="name1" id="name1"></label>
+            <label for="phone1"><input type="text" placeholder="姓名" id="phone1" name="phone"></label>
+            <input type="submit" value="提交" class="submit" >
+        </form>
+    </div>
 </div>
 <div id="f1">
     <div class="w-max ct tac">
@@ -108,12 +120,12 @@
         </div>
     </div>
 </div>
-<div id="f4">
+<div id="f4" class="w100 ovh">
     <div class="f4H tac ">
         <h2>月子季专家团队</h2>
         <p>月子季核心老师团月子季核心老师团月子季核心老师团月子季核心老师团月子季核心老师团</p>
-        <ul>
-            <li>
+        <ul id="f4Ul">
+            <li class="active">
                 <div class="imgW"><img src="images/avatar.png" alt="">
                 </div>
                 <p>蓝亚</p>
@@ -140,20 +152,79 @@
             </li>
         </ul>
     </div>
-    <div class="f4C">
-        <div class="left fl">
-            <img src="images/f4bg_03.jpg" alt="" class="fr">
+    <div id="wrap" class="rel">
+        <div class="f4C">
+            <div class="left fl">
+                <img src="images/f4bg_03.jpg" alt="" class="fr">
+            </div>
+            <div class="right fl">
+                <div class="rC fl">
+                    <h3>蓝亚</h3>
+                    <span>高级营养师</span>
+                    <p>高级营养师，执业药师，原成都市妇女儿童中心医院执业护士，从事母婴护理营养及用药指导工作10多年，
+                        积累了丰富的专业知识和经验。负责按照科学方法对月子餐进行编排和监制，以保证月子餐品的科学合理。
+                        运用医食同源的原理，针对产妇各种不同病症及体质进行药膳调理，同时对婴幼儿营养也颇有研究。</p>
+                </div>
+            </div>
         </div>
-        <div class="right fl">
-            <div class="rC fl">
-                <h3>蓝亚</h3>
-                <span>高级营养师</span>
-                <p>高级营养师，执业药师，原成都市妇女儿童中心医院执业护士，从事母婴护理营养及用药指导工作10多年，
-                    积累了丰富的专业知识和经验。负责按照科学方法对月子餐进行编排和监制，以保证月子餐品的科学合理。
-                    运用医食同源的原理，针对产妇各种不同病症及体质进行药膳调理，同时对婴幼儿营养也颇有研究。</p>
+        <div class="f4C">
+            <div class="left fl">
+                <img src="images/f4bg_03.jpg" alt="" class="fr">
+            </div>
+            <div class="right fl">
+                <div class="rC fl">
+                    <h3>蓝亚</h3>
+                    <span>高级营养师</span>
+                    <p>高级营养师，执业药师，原成都市妇女儿童中心医院执业护士，从事母婴护理营养及用药指导工作10多年，
+                        积累了丰富的专业知识和经验。负责按照科学方法对月子餐进行编排和监制，以保证月子餐品的科学合理。
+                        运用医食同源的原理，针对产妇各种不同病症及体质进行药膳调理，同时对婴幼儿营养也颇有研究。</p>
+                </div>
+            </div>
+        </div>
+        <div class="f4C">
+            <div class="left fl">
+                <img src="images/f4bg_03.jpg" alt="" class="fr">
+            </div>
+            <div class="right fl">
+                <div class="rC fl">
+                    <h3>蓝亚</h3>
+                    <span>高级营养师</span>
+                    <p>高级营养师，执业药师，原成都市妇女儿童中心医院执业护士，从事母婴护理营养及用药指导工作10多年，
+                        积累了丰富的专业知识和经验。负责按照科学方法对月子餐进行编排和监制，以保证月子餐品的科学合理。
+                        运用医食同源的原理，针对产妇各种不同病症及体质进行药膳调理，同时对婴幼儿营养也颇有研究。</p>
+                </div>
+            </div>
+        </div>
+        <div class="f4C">
+            <div class="left fl">
+                <img src="images/f4bg_03.jpg" alt="" class="fr">
+            </div>
+            <div class="right fl">
+                <div class="rC fl">
+                    <h3>蓝亚</h3>
+                    <span>高级营养师</span>
+                    <p>高级营养师，执业药师，原成都市妇女儿童中心医院执业护士，从事母婴护理营养及用药指导工作10多年，
+                        积累了丰富的专业知识和经验。负责按照科学方法对月子餐进行编排和监制，以保证月子餐品的科学合理。
+                        运用医食同源的原理，针对产妇各种不同病症及体质进行药膳调理，同时对婴幼儿营养也颇有研究。</p>
+                </div>
+            </div>
+        </div>
+        <div class="f4C">
+            <div class="left fl">
+                <img src="images/f4bg_03.jpg" alt="" class="fr">
+            </div>
+            <div class="right fl">
+                <div class="rC fl">
+                    <h3>蓝亚</h3>
+                    <span>高级营养师</span>
+                    <p>高级营养师，执业药师，原成都市妇女儿童中心医院执业护士，从事母婴护理营养及用药指导工作10多年，
+                        积累了丰富的专业知识和经验。负责按照科学方法对月子餐进行编排和监制，以保证月子餐品的科学合理。
+                        运用医食同源的原理，针对产妇各种不同病症及体质进行药膳调理，同时对婴幼儿营养也颇有研究。</p>
+                </div>
             </div>
         </div>
     </div>
+
 </div>
 <div id="f5">
     <div class="w-max ct tac">
@@ -203,7 +274,7 @@
         <h2>月子季就业明星</h2>
         <p class="tp">入学=高薪就业</p>
         <ul class="clearfix">
-            <li>
+            <li class="">
                 <div class="imgW">
                     <img src="images/f9avatar.png" alt="">
                 </div>
@@ -379,5 +450,29 @@
     map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
 //    map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
     map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+</script>
+<script >
+    $(function () {
+        var $lis=$("#f4Ul li");
+        var w=$(window).outerWidth();
+        $("#wrap .f4C").css({width:w});
+        $("#wrap").css({width:$lis.length*w});
+
+        $("#f4Ul").on("mouseenter","li",function () {
+           $(this).addClass("active").siblings().removeClass("active");
+           var index=$(this).index();
+           $("#wrap").stop().animate({
+               left:-index*w
+           },500)
+        });
+        $("#submit").click(function () {
+            $(".form").slideDown();
+        });
+        $(".form").on("click",function (e) {
+            if($(e.target).hasClass("form")){
+                $(this).slideUp();
+            }
+        })
+    })
 </script>
 </html>

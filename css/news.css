@@ -1,0 +1,37 @@
+#top{
+  position: relative;
+}
+
+.newsList {
+  padding-top: 35px; }
+  .newsList > ul li {
+    width: 100%;
+    border-bottom: 1px dashed #d2d2d2; }
+    .newsList > ul li:hover {
+      background-color: #eaeaea; }
+    .newsList > ul li a:hover {
+      color: #000; }
+    .newsList > ul li a span {
+      line-height: 42px;
+      display: block;
+      font-size: 14px; }
+      .newsList > ul li a span.newsL {
+        width: 520px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden; }
+        .newsList > ul li a span.newsL:before {
+          content: "";
+          display: inline-block;
+          width: 7px;
+          height: 7px;
+          border-radius: 7px;
+          background-color: #9f4288;
+          margin-right: 10px; }
+
+.pageW {
+  margin: 50px 0; }
+span.nav{
+  display: none;
+}
+/*# sourceMappingURL=news.css.map */

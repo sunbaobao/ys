@@ -1,0 +1,245 @@
+#head {
+  box-shadow: 0 5px 10px #d9d9d9; }
+
+#pContent {
+  min-height: 900px;
+  padding-top: 43px; }
+  #pContent .left {
+    width: 211px;
+    min-height: 500px;
+    border: 2px solid #9f4288; }
+    #pContent .left .lT {
+      height: 150px;
+      background: url("../images/productL_03.jpg") no-repeat top left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      padding-top: 30px;
+      padding-left: 38px; }
+      #pContent .left .lT h3 {
+        font-size: 26px;
+        color: #474747;
+        font-weight: bold;
+        line-height: 36px; }
+      #pContent .left .lT span {
+        font-size: 14px;
+        color: #908f8f;
+        line-height: 36px;
+        text-transform: uppercase; }
+    #pContent .left .lB {
+      background-color: #9f4288;
+      padding: 30px 14px;
+      min-height: 300px; }
+      #pContent .left .lB li:hover a, #pContent .left .lB li.active a {
+        font-weight: bold;
+        color: #f6b9cd; }
+      #pContent .left .lB a {
+        display: block;
+        color: #ffffff;
+        line-height: 44px;
+        border-bottom: 1px dashed #7ca7dc;
+        text-align: center;
+        font-size: 16px; }
+  #pContent .right {
+    width: 960px;
+    margin-left: 25px; }
+    #pContent .right .nav {
+      margin-top: 30px; }
+      #pContent .right .nav ul {
+        border-bottom: 1px solid #e2e2e2; }
+        #pContent .right .nav ul li {
+          float: left;
+          margin-bottom: -1px; }
+          #pContent .right .nav ul li.active a {
+            border-color: #e2e2e2;
+            border-bottom-color: #ffffff; }
+          #pContent .right .nav ul li a {
+            display: block;
+            font-size: 14px;
+            color: #101010;
+            line-height: 40px;
+            border: 1px solid #ffffff;
+            border-bottom-color: #e2e2e2;
+            padding: 0 13px; }
+    #pContent .right .navC {
+      position: absolute;
+      top: 0;
+      left: 0; }
+      #pContent .right .navC .navCT {
+        margin-top: 30px; }
+        #pContent .right .navC .navCT .s1 {
+          width: 400px;
+          height: 34px;
+          border: 1px solid #e6e6e6;
+          box-shadow: inset 2px 2px 6px #f3f3f3;
+          text-indent: 1em;
+          border-radius: 4px;
+          vertical-align: middle;
+          outline: none; }
+        #pContent .right .navC .navCT .search {
+          width: 53px;
+          height: 36px;
+          background-color: #fb8d14;
+          background-image: url("../images/SearchIcon.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          vertical-align: middle;
+          border-radius: 5px;
+          margin-left: -20px;
+          outline: none;
+          cursor: pointer;
+          font-size: 14px; }
+        #pContent .right .navC .navCT .button {
+          width: 100px;
+          height: 36px;
+          background-color: #03a9f4;
+          color: #ffffff;
+          line-height: 36px;
+          border-radius: 4px;
+          margin-left: 4px;
+          outline: none;
+          font-size: 14px;
+          cursor: pointer; }
+      #pContent .right .navC .navCC {
+        padding-top: 30px; }
+        #pContent .right .navC .navCC ul {
+          margin-right: -12px; }
+          #pContent .right .navC .navCC ul li {
+            float: left;
+            width: 231px;
+            height: 233px;
+            border: 1px solid #e4e4e4;
+            text-align: center;
+            position: relative;
+            margin-right: 10px;
+            margin-bottom: 14px; }
+            #pContent .right .navC .navCC ul li:hover {
+              border-color: #9f4288; }
+            #pContent .right .navC .navCC ul li img {
+              max-width: 100%; }
+            #pContent .right .navC .navCC ul li .des {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 40px;
+              background-color: #e2f0f6; }
+              #pContent .right .navC .navCC ul li .des p {
+                display: inline-block;
+                font-size: 12px;
+                color: #353535;
+                line-height: 14px;
+                vertical-align: middle;
+                width: 90%; }
+              #pContent .right .navC .navCC ul li .des:after {
+                content: "";
+                height: 100%;
+                width: 0;
+                display: inline-block;
+                vertical-align: middle; }
+      #pContent .right .navC .navCB {
+        margin-top: 30px; }
+        #pContent .right .navC .navCB p {
+          font-size: 14px; }
+          #pContent .right .navC .navCB p span {
+            color: #9f4288; }
+
+.searsel1, .rc .searsel {
+  width: 160px;
+  border: 1px solid #1479bf;
+  float: left;
+  margin-right: 10px;
+  line-height: 33px;
+  background: url(../images/bjbtn02.jpg) repeat-x;
+  height: 35px;
+  position: relative;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  text-indent: 1em;
+  color: #17347d; }
+
+.pageW {
+  width: 100%;
+  text-align: center; }
+  .pageW span {
+    display: inline-block;
+    vertical-align: middle; }
+    .pageW span.curr a {
+      background-color: #fe9126;
+      color: #ffffff;
+      border-color: #fe9126; }
+    .pageW span a {
+      display: block;
+      height: 21px;
+      padding: 0 7px;
+      border: 1px solid #e0e0e0;
+      line-height: 21px;
+      margin: 1px; }
+
+.selectW {
+  height: 707px; }
+
+.rc {
+  padding-top: 30px; }
+  .rc h3 {
+    font-size: 18px;
+    color: #333333;
+    font-weight: bold;
+    border-bottom: 1px dashed #d2d2d2;
+    line-height: 50px; }
+    .rc h3:before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 19px;
+      background-color: #03a9f4;
+      vertical-align: middle;
+      margin-right: 7px; }
+  .rc .rcc {
+    text-align: center; }
+    .rc .rcc label {
+      display: block;
+      width: 730px;
+      padding: 0 10px;
+      margin-bottom: 24px; }
+      .rc .rcc label span {
+        display: block;
+        width: 67px;
+        text-align: center;
+        font-size: 14px;
+        color: #151515;
+        float: left; }
+      .rc .rcc label textarea {
+        float: left;
+        width: 570px;
+        height: 150px;
+        box-shadow: inset 0 0 5px #e6e6e6;
+        border: 1px solid #e6e6e6;
+        border-radius: 3px; }
+    .rc .rcc input[type="button"] {
+      width: 90px;
+      height: 32px;
+      color: #ffffff;
+      line-height: 32px;
+      background-color: #03a9f4;
+      margin-left: 283px;
+      cursor: pointer;
+      margin-bottom: 40px; }
+    .rc .rcc h4 {
+      font-size: 14px;
+      color: #ed0909;
+      line-height: 42px;
+      border-bottom: 1px solid #d2d2d2;
+      margin-bottom: 40px; }
+    .rc .rcc .iframe {
+      width: 852px;
+      height: 850px;
+      border: none;
+      display: inline-block; }
+      .rc .rcc .iframe .edit {
+        border: none; }
+
+/*# sourceMappingURL=product.css.map */
